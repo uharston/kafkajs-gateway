@@ -1,0 +1,24 @@
+type SchemaFirst {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input CreateSchemaFirstInput {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input UpdateSchemaFirstInput {
+  id: Int!
+}
+
+type Query {
+  schemaFirst: [SchemaFirst]!
+  schemaFirst(id: Int!): SchemaFirst
+}
+
+type Mutation {
+  createSchemaFirst(createSchemaFirstInput: CreateSchemaFirstInput!): SchemaFirst!
+  updateSchemaFirst(updateSchemaFirstInput: UpdateSchemaFirstInput!): SchemaFirst!
+  removeSchemaFirst(id: Int!): SchemaFirst
+}
